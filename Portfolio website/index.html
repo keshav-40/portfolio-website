@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <h2>Keshav Singh</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menuBtn">☰</button>
+            <button id="themeBtn">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-text">
+
+                <h1>Hi, I'm Keshav Singh</h1>
+
+                <p>BCA Student | Java Developer | Learning Web Development</p>
+
+                <p class="intro">
+                    I build modern websites and solve DSA problems using Java.
+                </p>
+
+                <button id="resumeBtn">Download Resume</button>
+
+            </div>
+
+            <div class="hero-image">
+                Your Photo
+            </div>
+
+        </section>
+
+        <section class="about reveal">
+
+            <h2>About Me</h2>
+
+            <p>
+                I'm a BCA student passionate about Java, DSA and Web Development.
+                I'm currently building projects and preparing for placements.
+            </p>
+
+            <p id="moreText">
+                I am currently improving my problem-solving skills through DSA
+                and building projects using modern web technologies.
+            </p>
+
+            <button id="aboutBtn">Show More</button>
+
+        </section>
+
+        <section class="skills reveal" id="skills">
+
+            <h2>Skills</h2>
+
+            <p class="skills-subtitle">
+                Technologies I'm currently learning and working with.
+            </p>
+
+            <div class="skills-container">
+
+                <div class="skill-card">Java</div>
+
+                <div class="skill-card">HTML</div>
+
+                <div class="skill-card">CSS</div>
+
+                <div class="skill-card">JavaScript</div>
+
+                <div class="skill-card">React</div>
+
+                <div class="skill-card">SQL</div>
+
+            </div>
+
+            <section class="projects reveal" id="projects">
+                <h2>Projects</h2>
+
+                <div class="projects-container">
+                    <div class="project-card">
+
+                        <h3>Personal Portfolio Website</h3>
+
+                        <p>
+                            A responsive portfolio website built to showcase my skills,
+                            projects and experience.
+                        </p>
+
+                        <p class="tech-stack">
+                            HTML | CSS | JavaScript
+                        </p>
+
+                        <button id="portfolioBtn">View Project</button>
+
+                    </div>
+                    <div class="project-card">
+
+                        <h3>DSA Practice Tracker</h3>
+
+                        <p>
+                            A web application to track coding problems, topics,
+                            difficulty levels and progress.
+                        </p>
+
+                        <p class="tech-stack">
+                            HTML | CSS | JavaScript
+                        </p>
+
+                        <button id="dsaBtn">View Project</button>
+
+                    </div>
+                    <div class="project-card">
+
+                        <h3>Interview Tracker</h3>
+
+                        <p>
+                            A productivity tool to track companies, applications,
+                            interview rounds and application status.
+                        </p>
+
+                        <p class="tech-stack">
+                            HTML | CSS | JavaScript
+                        </p>
+
+                        <button id="interviewBtn">View Project</button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact reveal" id="contact">
+
+                <h2>Contact Me</h2>
+
+                <p>
+                    I'm open to internships, opportunities and interesting projects.
+                </p>
+
+                <form id="contactForm">
+
+                    <input type="text" id="name" placeholder="Your Name">
+
+                    <input type="email" id="email" placeholder="Your Email">
+
+                    <textarea id="message" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+                <div class="contact-links">
+                    <a href="mailto:keshavsingh19106@gmail.com">Email</a>
+
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                </div>
+
+                <p id="formMessage"></p>
+
+            </section>
+        </section>
+        <div id="projectModal" class="modal">
+
+            <div class="modal-content">
+
+                <span id="closeModal">&times;</span>
+
+                <h2 id="modalTitle">Personal Portfolio Website</h2>
+
+                <p id="modalDescription">
+                    This portfolio website is built using HTML, CSS and JavaScript.
+                    It showcases my skills, projects and experience.
+                </p>
+
+            </div>
+
+        </div>
+    </main>
+    <button id="topBtn">↑</button>
+    <footer>
+        <p>© <span id="year"></span> Keshav Singh</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
